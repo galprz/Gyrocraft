@@ -16,23 +16,22 @@ Moving your device and looking at it simultaneously can be pretty hard we create
 
 ## Technology
 * WebGL + ThreeJS - we created a 3D game in the browser by using ThreeJS framework that use WebGL.
-* Android - we developed an android app to controll the game
-* WebRTC + WebSocket - the app connect to the browser with WebRTC and has a WebSocket connection as a fullback
+* Android - we developed an android app to control the game
+* WebRTC + WebSocket - the android app connects to the browser with WebRTC or use WebSocket connection as a fallback
 
 ## How to play
 
 * Go to http://gyrocraft.co.nf
 * [Download the apk](https://github.com/galprz/Gyrocraft/blob/master/final-submit/app-debug.apk?raw=true) to your Android device and install it
-* In the app press play , pick a plane and scan the code that you see in the website
+* In the app press play , pick a plane and scan the code that you see in the browser
 
 ## Connection
 We used [Skylink](https://skylink.io/) service to create a P2P connection between the browser and the android device . <br>
 Skylink provides a simple javascript and android sdk to create fast and reliable P2P connection with WebRTC.<br> go to skylink website to learn more.
 
-As a fullback we created a simple WebSocket connection the android app creates Websocket service and the browser connect to it as a client .<br>
-In order to connect via WebSocket the browser and the app need to bee connected to the same wifi
-
-## Videos
+As a fallback we created a simple WebSocket connection.<br>
+The android app creates Websocket server and the browser connect to it as a client.<br>
+In order to connect via WebSocket the browser and the android device need to be connected to the same wifi
 
 ## Useful links
 
