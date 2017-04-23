@@ -1,0 +1,26 @@
+[
+  {
+    "mName": "Terminator",
+    "mLargeImageName": "terminator",
+    "mSmallImageName": "terminator_small",
+    "mSpeedScalaImage" : "airspeed_scala_terminator",
+    "mSpeedBarImage": "bar65",
+    "mAccelerationBarImage": "bar75"
+  },
+  {
+    "mName": "Super Flanker",
+    "mLargeImageName": "superflanker",
+    "mSmallImageName": "superflanker_small",
+    "mSpeedScalaImage" : "airspeed_scala_superflanker",
+    "mSpeedBarImage": "bar75",
+    "mAccelerationBarImage": "bar90"
+  },
+  {
+    "mName": "Fullback",
+    "mLargeImageName": "fullback",
+    "mSmallImageName": "fullback_small",
+    "mSpeedScalaImage" : "airspeed_scala_fullback",
+    "mSpeedBarImage": "bar90",
+    "mAccelerationBarImage": "bar65"
+  }
+]

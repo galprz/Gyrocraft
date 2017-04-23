@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gyrocraft="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.DialogActivity"
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:textColor="@color/bright_yellow"
+            android:textSize="@dimen/main_button_size"
+            android:id="@+id/connection_status"
+            android:layout_marginBottom="2.5sp"
+            android:layout_marginTop="2.5sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trying_to_connect"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:textColor="@color/bright_yellow"
+            android:textSize="@dimen/main_button_size"
+            android:id="@+id/long_connection"
+            android:visibility="gone"
+            android:layout_marginBottom="2.5sp"
+            android:layout_marginTop="2.5sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_here_to_cancel"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:textColor="@color/bright_orange"
+            android:textSize="@dimen/main_button_size"
+            android:id="@+id/connection_cancel"
+            android:onClick="returnToMain"
+            android:visibility="gone"
+            android:layout_marginBottom="2.5sp"
+            android:layout_marginTop="2.5sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/failed_to_connect"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:textColor="@color/bright_yellow"
+            android:textSize="@dimen/main_button_size"
+            android:id="@+id/connection_failed"
+            android:visibility="gone"
+            android:layout_marginBottom="2.5sp"
+            android:layout_marginTop="2.5sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_to_main"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:textColor="@color/dark_orange"
+            android:textSize="@dimen/main_button_size"
+            android:id="@+id/connection_return_to_main"
+            android:onClick="returnToMain"
+            android:visibility="gone"
+            android:layout_marginBottom="2.5sp"
+            android:layout_marginTop="2.5sp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

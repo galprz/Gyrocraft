@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Scala">
+        <attr name="minScala" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="Type" format="enum">
+            <enum name="Altitude" value="0"/>
+            <enum name="Velocity" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageButtonSelector">
+        <attr name="imgEnabled" format="reference" />
+        <attr name="imgPressed" format="reference" />
+        <attr name="imgDisabled" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.technion.gyrocraft.custom_widgets.SlidingPercentRelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gyrocraft="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background_image"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="16%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginRightPercent="10%">
+
+        <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/singleplayer_button"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/bright_yellow"
+            android:clickable="true"
+            android:onClick="startGameBtn"
+            android:padding="10dp"
+            gyrocraft:fontName="cargo.ttf"/>
+
+        <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tutorial_button"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/dark_yellow"
+            android:clickable="true"
+            android:padding="10dp"
+            android:onClick="startTutorialBtn"
+            gyrocraft:fontName="cargo.ttf"/>
+
+        <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/options_button"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/bright_orange"
+            android:onClick="onOptionsClick"
+            android:clickable="true"
+            android:padding="10dp"
+            gyrocraft:fontName="cargo.ttf"/>
+
+        <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leaderboard_button"
+            android:textSize="@dimen/text_size"
+            android:onClick="leaderBoardBtn"
+            android:clickable="true"
+            android:textColor="@color/dark_orange"
+            android:padding="10dp"
+            gyrocraft:fontName="cargo.ttf"/>
+
+    </LinearLayout>
+
+</com.technion.gyrocraft.custom_widgets.SlidingPercentRelativeLayout>

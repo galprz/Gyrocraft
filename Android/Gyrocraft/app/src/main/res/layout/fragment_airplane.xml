@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gyrocraft="http://schemas.android.com/apk/res-auto">
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="7%"
+        app:layout_marginRightPercent="7%">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="100%"
+        android:src="@drawable/terminator"
+        android:id="@+id/airplane_image"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="100%"
+        app:layout_marginLeftPercent="62%"
+        android:orientation="vertical">
+
+        <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placeholder"
+            android:textColor="@color/bright_yellow"
+            android:textSize="@dimen/secondary_header_text_size"
+            android:layout_weight="1"
+            android:id="@+id/airplane_name"
+            gyrocraft:fontName="cargo.ttf"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_marginBottom="5dp">
+                <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top speed: "
+                    android:textColor="@color/bright_orange"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold|italic"/>
+
+            </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:src="@drawable/bar65"
+                android:id="@+id/top_speed_bar"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:layout_height="13dp"/>
+
+        </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="5dp">
+                <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acceleration: "
+                    android:textColor="@color/bright_orange"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold|italic"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:src="@drawable/bar75"
+                    android:id="@+id/acceleration_bar"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:layout_height="13dp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    </android.support.percent.PercentFrameLayout>
+
+</android.support.percent.PercentRelativeLayout>

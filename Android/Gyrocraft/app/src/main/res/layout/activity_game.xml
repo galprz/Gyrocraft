@@ -1,0 +1,227 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gyrocraft="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#8d8d8d"
+    tools:context=".activities.GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1"
+        android:id="@+id/player_text"
+        android:textColor="#000000"
+        app:layout_marginLeftPercent="20%"
+        app:layout_marginTopPercent="1%"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/img_dashboard_line_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/dashboard_line"
+        app:layout_marginLeftPercent="5%"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="6%"
+        app:layout_marginTopPercent="2%"
+        android:src="@drawable/screw1"
+        android:id="@+id/imageView"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="6%"
+        app:layout_marginBottomPercent="2%"
+        android:src="@drawable/screw1"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screw1"
+        app:layout_marginRightPercent="6%"
+        app:layout_marginTopPercent="2%"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screw1"
+        app:layout_marginRightPercent="6%"
+        app:layout_marginBottomPercent="2%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/img_dashboard_line_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/dashboard_line"
+        app:layout_marginRightPercent="5%"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="47%"
+        app:layout_aspectRatio="100%"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/table">
+
+        <TableRow android:layout_weight="1">
+
+            <com.technion.gyrocraft.custom_widgets.Scala
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/velocity_scala"
+                app:Type="Velocity"
+                app:max="100"/>
+
+            <com.technion.gyrocraft.custom_widgets.Scala
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:Type="Altitude"
+                android:id="@+id/altitude_scala"
+                app:max="27000"
+                android:keepScreenOn="true"/>
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <com.technion.gyrocraft.custom_widgets.Pitch
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/pitch"/>
+
+            <com.technion.gyrocraft.custom_widgets.Compass
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/compass"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <include layout="@layout/widget_throttle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="80%"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="4.5%"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/throttle" />
+    <ImageView
+        android:id="@+id/next_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="15%"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="5.5%"
+        app:layout_marginTopPercent="40%"
+        android:src="@drawable/next_tutorial"
+        android:onClick="nextTutorial"
+        />
+
+
+    <ImageView
+        android:id="@+id/previous_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="15%"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="16%"
+        app:layout_marginTopPercent="40%"
+        android:src="@drawable/previous_tutorial"
+        android:onClick="previousTutorial"
+        />
+
+    <ImageView
+        android:id="@+id/exit_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit_tutorial"
+        app:layout_widthPercent="14%"
+        app:layout_heightPercent="18%"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="10%"
+        app:layout_marginTopPercent="5%"
+        android:onClick="exitTutorial"
+        />
+
+    <com.technion.gyrocraft.custom_widgets.ImageButtonSelector
+        android:layout_width="wrap_content"
+        gyrocraft:imgEnabled="@drawable/calibrate"
+        gyrocraft:imgPressed="@drawable/calibrate_clicked"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:layout_widthPercent="15%"
+        app:layout_aspectRatio="100%"
+        app:layout_marginRightPercent="8%"
+        app:layout_marginBottomPercent="5%"
+        android:onClick="calibrate"
+        android:scaleType="fitXY"
+        />
+
+    <com.technion.gyrocraft.custom_widgets.WarningLight
+        android:id="@+id/warning_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_aspectRatio="100%"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="0%"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="25%"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_marginRightPercent="12%"
+        app:layout_marginTopPercent="2%"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/pause_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/game_on"
+            android:layout_alignParentRight="true"
+            android:onClick="pauseClick"
+            />
+
+        <TextView
+            android:id="@+id/pause_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="10%"
+            app:layout_marginTopPercent="19%"
+            android:text="PAUSE"
+            android:textSize="@dimen/connection_text_size"/>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

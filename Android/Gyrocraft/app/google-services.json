@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1002925164433",
+    "firebase_url": "https://project-336317370588922183.firebaseio.com",
+    "project_id": "project-336317370588922183",
+    "storage_bucket": "project-336317370588922183.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002925164433:android:3e76f2dae1c53839",
+        "android_client_info": {
+          "package_name": "com.technion.gyrocraft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002925164433-mbd62279qtdno1g2j1kanhp1idfhnfuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj9JobsE2G7Iqtp_Wb7yvWTUq41e4FAnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

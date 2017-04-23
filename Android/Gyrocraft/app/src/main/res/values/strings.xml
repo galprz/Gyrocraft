@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Gyrocraft</string>
+
+    <string name="dummy_button">Gyro Button</string>
+    <string name="dummy_content">Gyro\nCONTENT</string>
+    <string name="title_activity_connection">Connection</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="ConnectionString">Waiting for\nconnection</string>
+
+    <string name="title_activity_game">GameActivity</string>
+
+    <string name="singleplayer_button">PLAY</string>
+    <string name="tutorial_button">TUTORIAL</string>
+    <string name="options_button">OPTIONS</string>
+    <string name="leaderboard_button">LEADERBOARD</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="device_sound_option">Device Volume</string>
+    <string name="browser_sound_option">Browser Volume</string>
+    <string name="vibration_option">Vibration</string>
+    <string name="back_button">Back</string>
+    <string name="options">Options</string>
+    <string name="LeaderBoard">LeaderBoard</string>
+    <string name="title_activity_qr">QRActivity</string>
+    <string name="start_button">Start</string>
+    <string name="choose_airplane">Choose an airplane</string>
+    <string name="airplane">Airplane</string>
+    <string name="title_activity_pause_menu">pauseMenu</string>
+    <string name="skylink_appid">0ec38284-8462-4db3-b24e-d6a787c8b6f9</string>
+    <string name="skylink_app_secret">we8205mzxxfde</string>
+    <string name="skylink_client_name">AndroidClient</string>
+    <string name="uuid">UUID</string>
+    <string name="connecting_to_server">Connecting to server</string>
+    <string name="connecting_to_browser">Connecting to browser</string>
+    <string name="waiting_for_game_to_start">Waiting for game to start</string>
+    <string name="game">game</string>
+    <string name="trying_to_connect"><![CDATA[Trying to connect for <t> seconds...]]></string>
+    <string name="click_here_to_cancel">Click here to cancel</string>
+    <string name="failed_to_connect">Failed to connect</string>
+    <string name="return_to_main">Return to Main</string>
+    <string name="final_score"><![CDATA[Final Score: <score>]]></string>
+    <string name="restart">Restart</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="new_high_score">New Score</string>
+    <string name="score"><![CDATA[<score>]]></string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="TutorialMode">TutorialMode</string>
+    <string name="finish_tutorial">You finished the tutorial</string>
+    <string name="finish_tutorial_death">You failed the tutorial</string>
+    <string name="waiting_for_tutoria_to_start">Waiting for tutorial to start</string>
+
+</resources>

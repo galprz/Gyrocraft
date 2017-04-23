@@ -1,0 +1,96 @@
+{
+	"game" : {
+		"world" : {
+			"sky":{
+				"clouds":{
+					"spread" : {
+						"min" : 300000,
+						"max" : 1500000
+					},
+					"number_of_clouds" : 5,
+					"size" : {
+						"min" : 70000,
+						"max" : 130000
+					},
+					"opacity" :{
+						"min" : 0.01,
+						"max" :	0.07
+					},
+					"cloud_limit_distance" :  1500000
+
+				},"sun" : {
+					"position_offset" :{
+						"x" : 0,
+						"y" : 10000,
+						"z" : -10000
+					},
+					"intensity" : 0.6,
+					"distance" : 0
+				},
+				"background" :{
+					"left_offset"  :5300
+				}
+			},
+			"checkpoint": {
+				"radius": 2500,
+				"tube": 200,
+				"radialSegments": 10,
+				"tubularSegments": 100
+			}
+		},
+		"airplane":{
+			"camera_far":1600000,
+			"camera_fov":70,
+			"scale" : 100,
+			"range" : 500000,
+			"max_display_altitude" : 27000,
+			"warning_range" : 100000,
+			"end_game_range": 1000,
+			"death_range":50000
+
+		},
+		"radar":{
+			"scala":5000,
+			"radarBG":"airplane/widgets/radar/radar.png",
+			"circle":"airplane/widgets/radar/object.png",
+			"circle_range" : 8000,
+			"triangle_up" : "airplane/widgets/radar/object_up.png",
+			"triangle_down" : "airplane/widgets/radar/object_down.png",
+			"arrow":"airplane/widgets/radar/arrow.png",
+			"radar_scanner":"airplane/widgets/radar/radar_scanner.png",
+			"scanner_pace" : 1,
+			"radar_radius" : 45
+		},
+		"checkpoint_algo":{
+			"bonusTime" : 10,
+			"safetyBonus" :1.1,
+			"rateOfChange" : 30,
+			"timePer180" : 9,
+			"XZRangeMin" : 100000,
+			"XZRangeMax" : 200000,
+			"Yrange" : 40000,
+			"YMaxChangeRate" :40000,
+			"YMinChangeRate" :24000,
+			"downChance": 0.7
+		},
+		"tutorial" : {
+			"slide_angle" : 0.8,
+			"lean_angle" : 0.4
+		}
+	},
+	"connection" : {
+		"web_rtc": {
+			"app_key": "0ec38284-8462-4db3-b24e-d6a787c8b6f9",
+			"app_secret": "we8205mzxxfde"
+		},
+		"web_socket": {
+		},
+		"firebase": {
+			"apiKey": "AIzaSyCzXxXRAgBWm5MK3HdLactnbmzEAKKq-Z4",
+			"authDomain": "project-336317370588922183.firebaseapp.com",
+			"databaseURL": "https://project-336317370588922183.firebaseio.com",
+			"storageBucket": ""
+		}
+	},
+	"qr_code_icon_image" : "airplane.png"
+}

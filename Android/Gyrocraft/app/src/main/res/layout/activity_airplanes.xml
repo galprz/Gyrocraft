@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.technion.gyrocraft.custom_widgets.SlidingPercentRelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gyrocraft="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="15%"
+        android:background="@drawable/secondry_background_image"/>
+
+    <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_airplane"
+        android:textColor="@color/bright_orange"
+        android:textSize="@dimen/header_text_size"
+        app:layout_marginTopPercent="12%"
+        app:layout_marginLeftPercent="3%"
+        gyrocraft:fontName="cargo.ttf"/>
+
+
+    <com.technion.gyrocraft.custom_widgets.AnimatedViewPager
+        android:id="@+id/view_pager"
+        app:layout_marginTopPercent="25%"
+        app:layout_marginBottomPercent="10%"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        app:layout_marginRightPercent="2%">
+
+        <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_button"
+            android:textColor="@color/dark_orange"
+            android:textSize="@dimen/text_size"
+            android:clickable="true"
+            android:onClick="backClick"
+            android:padding="10dp"
+            gyrocraft:fontName="cargo.ttf"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_button"
+            android:textColor="@color/dark_orange"
+            android:textSize="@dimen/text_size"
+            android:padding="10dp"
+            android:clickable="true"
+            android:onClick="startClick"
+            gyrocraft:fontName="cargo.ttf"/>
+
+    </LinearLayout>
+    <com.technion.gyrocraft.custom_widgets.ImageButtonSelector
+        android:id="@+id/left_button"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        app:layout_marginTopPercent="48%"
+        app:layout_marginLeftPercent="1%"
+        gyrocraft:imgEnabled="@drawable/arrow_left"
+        gyrocraft:imgPressed="@drawable/arrow_left_click"
+        android:textColor="@color/bright_yellow"
+        android:clickable="true"
+        android:onClick="leftArrowClick"/>
+
+    <com.technion.gyrocraft.custom_widgets.ImageButtonSelector
+        android:id="@+id/right_button"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        app:layout_marginTopPercent="48%"
+        app:layout_marginRightPercent="1%"
+        android:layout_alignParentRight="true"
+        gyrocraft:imgEnabled="@drawable/arrow_right"
+        gyrocraft:imgPressed="@drawable/arrow_right_click"
+        android:textColor="@color/bright_yellow"
+        android:clickable="true"
+        android:onClick="rightArrowClick"/>
+
+
+
+</com.technion.gyrocraft.custom_widgets.SlidingPercentRelativeLayout>

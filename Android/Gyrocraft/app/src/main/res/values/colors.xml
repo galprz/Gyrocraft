@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_overlay">#66000000</color>
+
+    <!-- Game colors -->
+    <color name="bright_yellow">#ffcc33</color>
+    <color name="dark_yellow">#faac25</color>
+    <color name="bright_orange">#fa7a25</color>
+    <color name="dark_orange">#fa5725</color>
+
+</resources>

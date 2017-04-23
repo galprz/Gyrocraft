@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DialogActivity"
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:text="Lost connection with the browser"
+            android:clickable="true"
+            android:textColor="@color/bright_yellow"
+            android:textSize="@dimen/main_button_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main menu"
+            android:textStyle="bold|italic"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:onClick="returnToMain"
+            android:textColor="@color/dark_orange"
+            android:textSize="@dimen/main_button_size"/>
+
+    </LinearLayout>
+</RelativeLayout>

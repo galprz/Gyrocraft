@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.technion.gyrocraft.custom_widgets.SlidingPercentRelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gyrocraft="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="15%"
+        android:background="@drawable/secondry_background_image"/>
+
+    <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="12%"
+        app:layout_marginLeftPercent="3%"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/bright_orange"
+        gyrocraft:fontName="cargo.ttf"
+        android:text="@string/options"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_heightPercent="40%"
+        app:layout_marginTopPercent="35%"
+        app:layout_marginLeftPercent="12%"
+        app:layout_marginRightPercent="10%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/device_sound_option"
+                    android:textColor="@color/bright_yellow"
+                    android:textStyle="bold|italic"/>
+
+                <SeekBar
+                    app:layout_widthPercent="60%"
+                    app:layout_marginLeftPercent="30%"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/device_volume_seekbar"
+                    android:max="100"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/browser_sound_option"
+                android:textColor="@color/bright_yellow"
+                android:textStyle="bold|italic"/>
+
+            <SeekBar
+                app:layout_widthPercent="60%"
+                app:layout_marginLeftPercent="30%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/browser_volume_seekbar"
+                android:max="100"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/vibration_option"
+                android:textColor="@color/bright_yellow"
+                android:textStyle="bold|italic"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="OFF"
+                android:textOn="ON"
+                app:layout_marginLeftPercent="30%"
+                android:id="@+id/vibrate_switch"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not available on this device"
+                app:layout_marginLeftPercent="30%"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:id="@+id/vibrate_not_available"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+    <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="2%"
+        app:layout_marginLeftPercent="2%"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/dark_orange"
+        android:text="@string/back_button"
+        android:clickable="true"
+        android:onClick="backClick"
+        android:padding="10dp"
+        gyrocraft:fontName="cargo.ttf"/>
+
+</com.technion.gyrocraft.custom_widgets.SlidingPercentRelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/throttle_clousre_up"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/throttle_clousre_down"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:id="@+id/img_dashboard_line_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/throttle_roller"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="17dp"
+        android:scaleType="fitXY"/>
+
+    <com.technion.gyrocraft.custom_widgets.VerticalSeekBar
+        android:id="@+id/seekbar_throttle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:max="100"
+        android:thumb="@layout/widget_throttle_controller"
+        android:progressDrawable="@layout/widget_throttle_bar"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="17dp"
+        android:minHeight="0dip"
+        android:maxHeight="0dip"/>
+
+
+
+</android.support.percent.PercentRelativeLayout>

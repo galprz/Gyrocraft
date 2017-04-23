@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+		body {
+			background-repeat:no-repeat;
+			background-image:url(single_player.png);
+			background-size: 100% 100%;
+		}
+</style>
+	<script src="libs/jquery/jquery.min.js"></script>
+
+</head>
+<body>
+<img id="pause" src="pause.png" style ="display:none;position:absolute; top:40%;left:40%;"/>
+</body>
+<script type="text/javascript">
+	var show = true;
+	$('body').click(function(){
+		if(show){
+			$('#pause').css('display','block');
+		}else{
+			$('#pause').css('display','none');
+		}
+		show = !show;
+	});
+</script>
+</html>

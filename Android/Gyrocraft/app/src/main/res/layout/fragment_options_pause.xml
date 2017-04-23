@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gyrocraft="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000"
+    android:id="@+id/options_pause_root">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/device_sound_option"
+                android:textColor="@color/bright_yellow"
+                android:textStyle="bold|italic"/>
+
+            <SeekBar
+                app:layout_widthPercent="60%"
+                app:layout_marginLeftPercent="30%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/device_volume_seekbar"
+                android:max="100"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="@string/browser_sound_option"
+            android:textColor="@color/bright_yellow"
+            android:textStyle="bold|italic"/>
+
+        <SeekBar
+            app:layout_widthPercent="60%"
+            app:layout_marginLeftPercent="30%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/browser_volume_seekbar"
+            android:max="100"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="@string/vibration_option"
+            android:textColor="@color/bright_yellow"
+            android:textStyle="bold|italic"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="30%"
+            android:id="@+id/vibrate_switch"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not available on this device"
+            app:layout_marginLeftPercent="30%"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:id="@+id/vibrate_not_available"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <com.technion.gyrocraft.custom_widgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/dark_orange"
+        android:text="@string/back_button"
+        android:clickable="true"
+        android:onClick="backClick"
+        android:padding="10dp"
+        gyrocraft:fontName="cargo.ttf"/>
+
+</LinearLayout>
+
+

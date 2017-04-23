@@ -1,0 +1,85 @@
+[
+	{
+		"type":"OBJMTL",
+		"id" : "airplane.terminator_airplane",
+		"object":"airplane/Su-37_Terminator/Su-37_Terminator.obj",
+		"mtl":"airplane/Su-37_Terminator/Su-37_Terminator.mtl"
+	},
+	{
+		"type" : "OBJMTL",
+		"id" : "airplane.super_flanker_airplane",
+		"object" : "airplane/Su-35_SuperFlanker/Su-35_SuperFlanker.obj",
+		"mtl" : "airplane/Su-35_SuperFlanker/Su-35_SuperFlanker.mtl"
+	},
+	{
+		"type" : "OBJMTL",
+		"id" : "airplane.fullback_airplane",
+		"object" : "airplane/Su-34_Fullback/Su-34_Fullback.obj",
+		"mtl" : "airplane/Su-34_Fullback/Su-34_Fullback.mtl"
+	},{
+		"type" : "OBJMTL",
+		"id" : "tutorial.phone",
+		"object" : "tutorial/phone/note4.obj",
+		"mtl" : "tutorial/phone/note4.mtl"
+	},{
+		"type" : "TEXTURE",
+		"id" : "tutorial.phone_textures.screen",
+		"src" : "tutorial/phone/screen.png"
+	},{
+		"type" : "TEXTURE",
+		"id" : "tutorial.phone_textures.screen_calibrate",
+		"src" : "tutorial/phone/screen_calibrate.png"
+	},{
+		"type" : "TEXTURE",
+		"id" : "tutorial.phone_textures.screen_throttle",
+		"src" : "tutorial/phone/screen_throttle.png"
+	},{
+		"type" : "TEXTURE",
+		"id" : "tutorial.phone_textures.screen_widgets",
+		"src" : "tutorial/phone/screen_widgets.png"
+	},{
+		"type" : "TEXTURE",
+		"id" : "tutorial.phone_textures.screen_alarm_pause",
+		"src" : "tutorial/phone/screen_alarm_pause.png"
+	},{
+		"type" : "IMAGE",
+		"id" : "tutorial.phone_textures.radar_same_plane",
+		"src" : "tutorial/tutorial_radar.png"
+	},{
+		"type" : "IMAGE",
+		"id" : "tutorial.phone_textures.radar_same_plane2",
+		"src" : "tutorial/tutorial_radar_2.png"
+	},{
+		"type" : "TEXTURE",
+		"id" : "world.sky.clouds.cloud1",
+		"src" : "world/sky/clouds/cloud1.png"
+	},{
+		"type" : "IMAGE",
+		"id" : "world.sky.background",
+		"src" : "world/sky/sky_background.jpg"
+	},{
+		"type" : "AUDIO",
+		"id" : "background_music",
+		"src" : "resources/Sounds/BG_adrenaline.wav"
+	},{
+		"type" : "AUDIO",
+		"id" : "time_ending",
+		"src" : "resources/Sounds/SE_time_ending.wav"
+	},{
+		"type" : "AUDIO",
+		"id" : "death_up",
+		"src" : "resources/Sounds/SE_death_up.wav"
+	},{
+		"type" : "AUDIO",
+		"id" : "death_down",
+		"src" : "resources/Sounds/SE_death_down.wav"
+	},{
+		"type" : "AUDIO",
+		"id" : "checkpoint_sound",
+		"src" : "resources/Sounds/SE_checkpoint.wav"
+	},{
+		"type" : "AUDIO",
+		"id" : "wind",
+		"src" : "resources/Sounds/SE_wind.wav"
+	}
+]
