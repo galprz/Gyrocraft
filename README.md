@@ -22,7 +22,7 @@ Moving your device and looking at it simultaneously can be pretty hard we create
 ## How to play
 
 * Go to http://gyrocraft.co.nf
-* [Download the apk](final-submit/app-debug.apk) to your Android device and install it
+* [Download the apk](https://github.com/galprz/Gyrocraft/blob/master/final-submit/app-debug.apk?raw=true) to your Android device and install it
 * In the app press play , pick a plane and scan the code that you see in the website
 
 ## Connection
