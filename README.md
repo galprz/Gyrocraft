@@ -7,8 +7,8 @@
 <p align="center">
 <a href="">http://gyrocraft.co.nf</a>
 </p>
-## What it is
 
+## What it is
 Gyrocraft is an arcade-style game created to provide an immersive gameplay experience.<br>
 By utilizing both your computer screen and handheld device, it brings you the ultimate gaming experience.<br>
 
