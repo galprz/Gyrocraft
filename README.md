@@ -5,7 +5,8 @@
   <img src="images/logos.png" width="200"/>
 </p>
 <p align="center">
-<a href="">http://gyrocraft.co.nf</a>
+<a href="http://gyrocraft.co.nf">http://gyrocraft.co.nf</a>
+<a href="https://github.com/galprz/Gyrocraft/blob/master/final-submit/app-debug.apk?raw=true">Android Application</a>
 </p>
 
 ## What it is
